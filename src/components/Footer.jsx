@@ -1,8 +1,65 @@
+import logodigitalfooter from "../../public/images/logo-digital-footer.png"
+import logofacebookfooter from "../../public/images/logo-facebook-footer.png"
+import logoinstagramfooter from "../../public/images/logo-instagram-footer.png"
+import logotwitterfooter from "../../public/images/logo-twitter-footer.png"
+
+
 import "./Footer.css"
 
 export default function Footer() {
     return (
         <>
+            <footer>
+
+                <section className="sera">
+
+                    <div className="logod">
+                        <img src={logodigitalfooter} alt="" />
+
+                        <div className="lorem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore.</p>
+                        </div>
+
+
+                        <div className="logos">
+                            <a href=""><img src={logofacebookfooter} alt="" /></a>
+                            <a href=""><img src={logoinstagramfooter} alt="" /></a>
+                            <a href=""><img src={logotwitterfooter} alt="" /></a>
+                        </div>
+
+                    </div>
+
+                    <div className="informaçao">
+                        <h3>Informação</h3>
+                        <p>Sobre Drip Store</p>
+                        <p>Segurança</p>
+                        <p>Wishlist</p>
+                        <p>Blog</p>
+                        <p>Trabalhe conosco</p>
+                        <p>Meus Pedidos</p>
+
+                    </div>
+
+                    <div className="categoria">
+                        <h3 className="h3tit">Categorias</h3>
+                        <p>Camisetas</p>
+                        <p>Calças</p>
+                        <p>Bonés</p>
+                        <p>Headphones</p>
+                        <p>Tênis</p>
+                    </div>
+                    <div className="contato">
+                        <h3 className="h3tit">Contato</h3>
+                        <p>Av. Santos Dumont, 1510-1 andar Aldeota, Fortaleza -CE, 60150-161</p>
+                        <p>(85) 3051-3411</p>
+                    </div>
+                <div className="divFinal">
+                    <hr className="linha-footer"/>
+                    <p className="copy"> &copy; 2025 Digital College</p>
+                </div>
+            </section>
+        </footer >
         </>
     );
 };
