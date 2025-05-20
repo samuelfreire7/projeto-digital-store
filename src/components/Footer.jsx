@@ -56,10 +56,10 @@ export default function Footer() {
                     </div>
                 <div className="divFinal">
                     <hr className="linha-footer"/>
-                    <p className="copy"> &copy; 2025 Digital College</p>
-                </div>
+                </div>      
             </section>
-        </footer >
+            <p className="p"> &copy; 2025 Digital College</p>
+        </footer>
         </>
     );
 };

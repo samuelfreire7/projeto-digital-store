@@ -4,12 +4,14 @@
     font-family: sans-serif;
 }
 
-body, html {
+body,
+html {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 footer {
     background-color: #1f1f1f;
     color: white;
@@ -34,17 +36,20 @@ footer {
         justify-content: left;
         gap: 15px;
         font-family: Inter;
-        h3{
+
+        h3 {
             font-size: 18px;
         }
-        p{
+
+        p {
             font-size: 16px;
             cursor: pointer
         }
-        p:hover{
+
+        p:hover {
             color: #C92071;
-            }
-        
+        }
+
     }
 
     .logod {
@@ -96,17 +101,34 @@ footer {
 .search-bar button:hover {
     background-color: #333;
 }
+
 .divFinal {
     margin: 75px 0px 0px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-content: center;
     margin-bottom: 1rem;
 }
+
 .linha-footer {
-    min-width: 1240px; 
+    min-width: 1100px;
     width: 16px 0px 23px;
     margin-bottom: 23px;
     background-color: #ffffff4d;
+}
+
+.divFinal p {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: small;
 }
