@@ -1,4 +1,3 @@
-import imagemTenisCard from "../../public/images/Teniskswiss.png"
 import "./ProductCard.css"
 
 export default function ProductCard() {
@@ -7,7 +6,7 @@ export default function ProductCard() {
             <div class="colecoes">
 
                 <div className="card">
-                    <a href="#" /><img src={imagemTenisCard} className="card-img-top" alt="..." />
+                    <a href="#" /><img src="/images/Teniskswiss.png" className="card-img-top" alt="..." />
                     <div className="card-body body_em_alta" >
                         <p className="card-title">Tênis</p>
                         <p className="card-text texto_em_alta">K-Swiss V8 - Masculino</p>
