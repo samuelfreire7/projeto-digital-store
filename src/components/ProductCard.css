@@ -1,35 +1,37 @@
-.colecoes .card {
-    background-color: #D8E3F2;
-    display: flex;
-    width: 405px;
-    height: 251px;
+.card {
+    border: none;
+    border-radius: 0%;
     width: 18rem;
-    p {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        transform: translate(-50%, -50%);
-        font-size: 20px;
-        background-color: #E7FF86;
-        border-radius: 50px;
-        padding: 5px;
-    }
-    a {
-        display: flex;
-        position: absolute;
-        top: 75%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        width: 153px;
-        height: 48px;
-        border-radius: 8px;
-        background-color: #F5F5F5;
-        color: #C92071;
-        border: none;
-        font-family: inter;
-        font-size: 16px;
-        justify-content: center;
-        align-items: center;
-        font-weight: 700;
-    }
+}
+
+
+.body_em_alta {
+    background-color: #E2E3FF;
+}
+
+.card img {
+    width: 290px;
+    /* transform: rotateY(10deg) rotateX(5deg); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.presos {
+    display: flex;
+    justify-content: center;
+}
+
+.descontos {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.texto_em_alta {
+    font-size: 24px;
+    text-align: center
+}
+
+.valor_em_alta {
+    font-size: 24px;
+    text-decoration: line-through;
 }
