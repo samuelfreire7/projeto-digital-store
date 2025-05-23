@@ -1,4 +1,9 @@
 import "./Footer.css"
+import logoDigitalFooter from "../assets/images/logo_DStore_branca.png"
+import logoFacebookFooter from "../assets/images/logoFacebook.png"
+import logoInstagramFooter from "../assets/images/logoInstagram.png"
+import logoTwitterFooter from "../assets/images/logoTwitter.png"
+
 
 export default function Footer() {
     return (
@@ -8,7 +13,7 @@ export default function Footer() {
                 <section className="sera">
 
                     <div className="logod">
-                        <img src="./public/images/logo_DStore_branca.png" alt="" />
+                        <img src={logoDigitalFooter} alt="" />
 
                         <div className="lorem">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -17,9 +22,9 @@ export default function Footer() {
 
 
                         <div className="logos">
-                            <a href=""><img src="./public/images/logo facebook.png" alt="" /></a>
-                            <a href=""><img src="./public/images/logo instagram.png" alt="" /></a>
-                            <a href=""><img src="./public\images\logo twitter.png" alt="" /></a>
+                            <a href=""><img src={logoFacebookFooter} alt="" /></a>
+                            <a href=""><img src={logoInstagramFooter} alt="" /></a>
+                            <a href=""><img src={logoTwitterFooter} alt="" /></a>
                         </div>
 
                     </div>
@@ -48,12 +53,12 @@ export default function Footer() {
                         <p>Av. Santos Dumont, 1510-1 andar Aldeota, Fortaleza -CE, 60150-161</p>
                         <p>(85) 3051-3411</p>
                     </div>
-                <div className="divFinal">
-                    <hr className="linha-footer"/>
-                </div>      
-            </section>
-            <p className="p"> &copy; 2025 Digital College</p>
-        </footer>
+                    <div className="divFinal">
+                        <hr className="linha-footer" />
+                    </div>
+                </section>
+                <p className="p"> &copy; 2025 Digital College</p>
+            </footer>
         </>
     );
 };
