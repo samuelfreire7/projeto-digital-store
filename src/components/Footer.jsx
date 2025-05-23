@@ -1,9 +1,3 @@
-import logodigitalfooter from "../../public/images/logo-digital-footer.png"
-import logofacebookfooter from "../../public/images/logo-facebook-footer.png"
-import logoinstagramfooter from "../../public/images/logo-instagram-footer.png"
-import logotwitterfooter from "../../public/images/logo-twitter-footer.png"
-
-
 import "./Footer.css"
 
 export default function Footer() {
@@ -14,7 +8,7 @@ export default function Footer() {
                 <section className="sera">
 
                     <div className="logod">
-                        <img src={logodigitalfooter} alt="" />
+                        <img src="./public/images/logo_DStore_branca.png" alt="" />
 
                         <div className="lorem">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -23,9 +17,9 @@ export default function Footer() {
 
 
                         <div className="logos">
-                            <a href=""><img src={logofacebookfooter} alt="" /></a>
-                            <a href=""><img src={logoinstagramfooter} alt="" /></a>
-                            <a href=""><img src={logotwitterfooter} alt="" /></a>
+                            <a href=""><img src="./public/images/logo facebook.png" alt="" /></a>
+                            <a href=""><img src="./public/images/logo instagram.png" alt="" /></a>
+                            <a href=""><img src="./public\images\logo twitter.png" alt="" /></a>
                         </div>
 
                     </div>
