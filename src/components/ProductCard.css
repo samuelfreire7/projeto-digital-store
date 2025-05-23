@@ -1,5 +1,6 @@
+
 .card {
-    border: none;
+    border: 1px solid;
     border-radius: 0%;
     width: 18rem;
 }
@@ -7,6 +8,8 @@
 
 .body_em_alta {
     background-color: #E2E3FF;
+    padding: 10px;
+    
 }
 
 .card img {
@@ -28,10 +31,23 @@
 
 .texto_em_alta {
     font-size: 24px;
-    text-align: center
+    text-align: center;
+    margin: 0;
+    color: #474747;
 }
 
 .valor_em_alta {
     font-size: 24px;
     text-decoration: line-through;
+}
+
+.promoçao_em_alta {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: #E7FF86;
+    border-radius: 50px;
+    padding: 5px;
 }

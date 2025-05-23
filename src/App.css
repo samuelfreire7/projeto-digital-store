@@ -1,0 +1,7 @@
+.cards-container{
+    /* background-color: aqua; */
+    display: flex;
+flex-wrap: wrap;
+    gap: 30px;
+    
+}
