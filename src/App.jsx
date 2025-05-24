@@ -77,7 +77,7 @@ function App() {
   return (
     <>
 
-      <div className="cards-container">
+      <div className="cards-div">
         {produtos.map((produto, index) => (
           <ProductCard
             key={index}
@@ -89,7 +89,9 @@ function App() {
         ))}
       </div>
 
-      <div>
+      <div className="H1_colecoes" ><p>Coleções em destaque</p></div>
+      
+      <div className="cards_colecao_div">
         {colecoes.map((colecao, index) => (
           <Section
             key={index}

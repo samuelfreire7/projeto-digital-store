@@ -3,8 +3,6 @@ import "./Section.css"
 export default function Section(props) {
     return (
         <>
-                {/* <p className="H1_colecoes">Coleções em destaque</p> */}
-
             <div className="coleçoes">
                 <div className="card">
                     <div className="card-body">

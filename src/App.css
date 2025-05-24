@@ -1,7 +1,14 @@
-.cards-container{
-    /* background-color: aqua; */
-    display: flex;
-flex-wrap: wrap;
-    gap: 30px;
+.cards-div {
     
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.cards_colecao_div{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }

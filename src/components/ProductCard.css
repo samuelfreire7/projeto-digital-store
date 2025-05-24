@@ -14,7 +14,6 @@
 
 .card img {
     width: 290px;
-    /* transform: rotateY(10deg) rotateX(5deg); */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,7 +40,7 @@
     text-decoration: line-through;
 }
 
-.promoçao_em_alta {
+/* .promoçao_em_alta {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -50,4 +49,4 @@
     background-color: #E7FF86;
     border-radius: 50px;
     padding: 5px;
-}
+} */
