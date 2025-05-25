@@ -3,46 +3,47 @@
     display: flex;
     width: 410px;
     height: 251px;
+}
 
-    P {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        transform: translate(-50%, -50%);
-        font-size: 20px;
-        background-color: #E7FF86;
-        border-radius: 50px;
-        padding: 5px;
-    }
+.desc {
+    height: 40px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: #E7FF86;
+    border-radius: 50px;
+    padding: 5px;
+}
 
-    a {
-        display: flex;
-        position: absolute;
-        top: 75%;
-        left: 20%;
-        transform: translate(-50%, -50%);
-        width: 153px;
-        height: 48px;
-        border-radius: 8px;
-        background-color: #F5F5F5;
-        color: #C92071;
-        border: none;
-        font-family: inter;
-        font-size: 16px;
-        justify-content: center;
-        align-items: center;
-        font-weight: 700;
-    }
-
+.btn_comprar {
+    display: flex;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 153px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    color: #C92071;
+    border: none;
+    font-family: inter;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
 
 .titulo_dos_cards_colecao {
     position: absolute;
     top: 40%;
-    left: 20%;
+    left: 25%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
+    width: 130px;
 }
 
 
@@ -59,6 +60,7 @@
 }
 
 .imagem_dos_cards_colecoes {
+    width: 290px;
     height: 234px;
     margin-left: 102px;
 }

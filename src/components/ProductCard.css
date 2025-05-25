@@ -1,45 +1,52 @@
 
 .card {
-    border: 1px solid;
+    border: none;
     border-radius: 0%;
     width: 18rem;
 }
 
 .body_em_alta {
-    background-color: #E2E3FF;
+    background-color: #F8F9FE;
     padding: 10px;
-    
+    width: 290px;
+
 }
-.card img {
+
+.card-img-top {
     width: 290px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 .presos {
     display: flex;
     justify-content: center;
 }
+
 .descontos {
     font-weight: bold;
     padding-left: 20px;
     font-size: 24px;
 }
+
 .texto_em_alta {
     font-size: 24px;
     text-align: center;
     margin: 0;
     color: #474747;
 }
+
 .valor_em_alta {
     font-size: 24px;
     text-decoration: line-through;
 }
-/* .promoçao_em_alta {
+
+.promoçao_em_alta {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 10%;
+    left: 20%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     background-color: #E7FF86;
     border-radius: 50px;
     padding: 5px;
-} */
+}

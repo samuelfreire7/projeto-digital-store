@@ -1,3 +1,4 @@
+
 import './App.css'
 import Header from './components/Header';
 import NavLinks from './components/NavLinks';
@@ -9,6 +10,7 @@ import colecaoFone from './assets/images/cardFone.png';
 import colecaoTenis from './assets/images/cardTenis.png';
 import ProductCard from './components/ProductCard';
 import sapatoAzul from './assets/images/sapato_azul_Dstore.png';
+import seta from './assets/images/seta.png';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 
@@ -68,7 +70,7 @@ function App() {
   const colecoes = [
     {
       imagem: colecaoBlusa,
-      titulo: "Novo drop Supreme",
+      titulo: "Novo drop supreme",
     },
     {
       imagem: colecaoTenis,
@@ -86,7 +88,6 @@ function App() {
       <NavLinks />
       <Carrossel />
 
-
       <div className="H1_colecoes" ><p>Coleções em destaque</p></div>
 
       <div className="cards_colecao_div">
@@ -102,7 +103,7 @@ function App() {
       <ColecoesDestaque />
 
       <div className='titulo_produtos_em_alta'><h1 className="H1_em_alta">Produtos em alta</h1>
-        <a className="link_produtos_em_alta" href="">Ver Todos <img src="src\assets\images\seta.png" alt="" /></a>
+        <a className="link_produtos_em_alta" href="">Ver Todos <img src={seta} alt="Seta" /></a>
       </div>
 
       <div className="cards-div">

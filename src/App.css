@@ -1,10 +1,11 @@
+
+
 .cards-div {
 
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-
 }
 
 .cards_colecao_div {
