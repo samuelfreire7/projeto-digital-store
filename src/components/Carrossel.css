@@ -1,0 +1,74 @@
+.texto_na_imagem {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.texto_na_imagem h1 {
+    font-weight: 750;
+    font-size: 64px;
+}
+
+.texto_na_imagem p {
+    font-weight: 400;
+    font-size: 19.44px;
+    line-height: 36.72px;
+    letter-spacing: 0.81px;
+    color: #474747;
+}
+
+.texto_na_imagem .oferta {
+    color: orange;
+    font-weight: 900;
+}
+
+.texto_na_imagem img {
+    width: 70px;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+}
+
+.tenis_banner {
+position: absolute;
+top: 20px;
+left: 45%;
+}
+
+.ornamento {
+position: absolute;
+top: 20px;
+left: 90%;
+}
+
+.botao1 {
+    width: 237px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #C92071;
+    color: white;
+    border: none;
+}
+
+.botao1:hover {
+    background-color: #a11a5c;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background-color: #CCCCCC !important;
+    opacity: 0.5;
+    transition: 0.3s;
+    margin: 0 6px;
+}
+
+.carousel-indicators .active {
+    background-color: #C92071 !important;
+    opacity: 1;
+}

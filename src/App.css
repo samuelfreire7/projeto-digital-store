@@ -1,5 +1,5 @@
 .cards-div {
-    
+
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -7,8 +7,35 @@
 
 }
 
-.cards_colecao_div{
+.cards_colecao_div {
     display: flex;
     gap: 30px;
     justify-content: center;
+}
+
+.H1_em_alta {
+    text-align: left;
+    margin-left: 1px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+    height: 38px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #474747;
+
+}
+
+.link_produtos_em_alta {
+    color: #C92071;
+    font-size: 18px;
+    font-family: inter;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.titulo_produtos_em_alta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -5,41 +5,34 @@
     width: 18rem;
 }
 
-
 .body_em_alta {
     background-color: #E2E3FF;
     padding: 10px;
     
 }
-
 .card img {
     width: 290px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-
 .presos {
     display: flex;
     justify-content: center;
 }
-
 .descontos {
     font-weight: bold;
     padding-left: 20px;
     font-size: 24px;
 }
-
 .texto_em_alta {
     font-size: 24px;
     text-align: center;
     margin: 0;
     color: #474747;
 }
-
 .valor_em_alta {
     font-size: 24px;
     text-decoration: line-through;
 }
-
 /* .promoçao_em_alta {
     position: absolute;
     top: 5%;

@@ -1,11 +1,15 @@
 import './App.css'
-import Footer from './components/Footer'
-import ProductCard from './components/ProductCard'
+import Header from './components/Header';
+import NavLinks from './components/NavLinks';
+import Carrossel from './components/carrossel';
 import Section from './components/Section'
-import sapatoAzul from './assets/images/sapato_azul_Dstore.png';
+import ColecoesDestaque from './components/Colecao';
 import colecaoBlusa from './assets/images/blusaSupreme.png';
 import colecaoFone from './assets/images/cardFone.png';
 import colecaoTenis from './assets/images/cardTenis.png';
+import ProductCard from './components/ProductCard';
+import sapatoAzul from './assets/images/sapato_azul_Dstore.png';
+import Footer from './components/Footer';
 
 
 
@@ -77,6 +81,29 @@ function App() {
   return (
     <>
 
+      <Header />
+      <NavLinks />
+      <Carrossel />
+
+
+      <div className="H1_colecoes" ><p>Coleções em destaque</p></div>
+
+      <div className="cards_colecao_div">
+        {colecoes.map((colecao, index) => (
+          <Section
+            key={index}
+            titulo={colecao.titulo}
+            imagem={colecao.imagem}
+          />
+        ))}
+      </div>
+
+      <ColecoesDestaque />
+
+      <div className='titulo_produtos_em_alta'><h1 className="H1_em_alta">Produtos em alta</h1>
+        <a className="link_produtos_em_alta" href="">Ver Todos <img src="src\assets\images\seta.png" alt="" /></a>
+      </div>
+
       <div className="cards-div">
         {produtos.map((produto, index) => (
           <ProductCard
@@ -89,17 +116,7 @@ function App() {
         ))}
       </div>
 
-      <div className="H1_colecoes" ><p>Coleções em destaque</p></div>
-      
-      <div className="cards_colecao_div">
-        {colecoes.map((colecao, index) => (
-          <Section
-            key={index}
-            titulo={colecao.titulo}
-            imagem={colecao.imagem}
-          />
-        ))}
-      </div>
+
       <Footer />
     </>
   )

@@ -1,0 +1,142 @@
+
+header.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #C92071;
+
+}
+
+header.logo img {
+    width: 33px;
+    height: 33px;
+}
+
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 0px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #C92071;
+}
+
+header.itens {
+    margin: 0;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    padding: 0;
+    border: 30px;
+    justify-content: center;
+    list-style: none;
+    color: rgb(112, 110, 110);
+    cursor: pointer;
+}
+
+#barraPesquisa {
+    width: 499px;
+    height: 60px;
+    /* margin-top: 34px;
+    margin-left: 10px; */
+    border: 0px;
+    border-radius: 8px 0 0 8px;
+    background-color: #4747470a;
+    padding-inline-start: 25px;
+}
+
+.search-bar button:hover {
+    background-color: #333;
+}
+
+.inicio {
+    display: flex;
+    gap: 0;
+    margin: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Pesquisar {
+    color: #666666;
+}
+
+.imagem-principal {
+    width: 253px;
+    height: 44px;
+    /* margin-top: 42px;
+    margin-left: 104px; */
+    cursor: pointer;
+}
+
+#botaoLupa {
+
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-color: #4747470a;
+    border: 0px;
+    border-radius: 0 8px 8px 0;
+    width: 60px;
+    height: 60px;
+    margin-top: 34px;
+    margin-left: 0;
+}
+
+#cadastro {
+    width: 102px;
+    height: 28px;
+    /* margin-top: 50px;
+    margin-left: 48px; */
+    text-decoration: underline;
+    color: black;
+}
+
+#botaoEntrar {
+    width: 114px;
+    height: 40px;
+    /* margin-top: 44px;
+    margin-left: 30px; */
+    color: #f5f5f5;
+    background-color: #C92071;
+    border: 0px;
+    border-radius: 8px;
+    box-shadow: #333;
+    cursor: pointer;
+}
+
+#botaoEntrar:hover {
+    background-color: #4f061e;
+}
+
+#iconeCarrinho {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGjSURBVHgB1ZTLUcMwFEWvFPakBFEBySowLAgVpATSAXYFCQ0QpwKGCggV4A3DdwaXoHTgJTDE4sof4iERTow3nJlEH9u6eu9dCfjviKJzr7yhBOKEv0MdhGgIueyIEfWu2d4+KD9AQ3wL9PRk7xOmawAtYXbRELI8ONJBxMU1I1FoiJ2fEwtgTtXBk/IuUQMDyTomU9ZRrxXIaRuIPmphVAuiw86JS0DbP1sT1IBuHGeGyZAr+rSpbV+V10YNJOQ+m6gYr0QgcgEjWtZJMTbYpYHxD3QQZN8n3JiInQLIU/RuFjZF83UCPIyzNNblOFyKiQ6fXFUKEAUH1s4opaHApvWDBkFq9QyJBnkDrHtsbJFToPAvfonAhUx3n6YsLs2tYq8LevkYW8JDNrBtnsIUx0EzUxZr8qh8gy0lEojz8oxwvUor9tn0sR1hk1f9RjgjeFbeiOEOeYimxSFy8aL8U16SYy436+kLv/xsbZGtn7k4P4ASEGeogIt7SF1nvDvldSoFujqIBUxo+6zyDSpglOnJZTqisoMqYaHVpu/WvRz/zBeFHY3gm22JsQAAAABJRU5ErkJggg==);
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    width: 33px;
+    height: 29px;
+    /* margin-top: 47px;
+    margin-left: 70px;
+    margin-right: 100px; */
+}
+
+
+.itens-cadastro {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+    align-items: center;
+}
+
+#maps {
+    color: white;
+    text-decoration: none;
+}
