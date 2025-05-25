@@ -1,0 +1,56 @@
+.ultima_section{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+margin: 100px;
+
+
+}
+
+.texto_colecionador{
+
+    width: 589px;
+    height: 341px;
+    left: 692px;
+
+}
+
+.texto_colecionador .ultima_oferta {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    color: #C92071;
+}
+
+.ultima_section .titulo_ultima_section{
+    font-family: Inter;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        letter-spacing: 1px;
+        color: #474747;
+}
+
+.ultima_section .paragrafo_ultima_section{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
