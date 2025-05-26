@@ -1,13 +1,116 @@
 import tenisImg from '../assets/images/tenis carrossel.png';
 import stars from '../assets/images/Stars.png'
+import star from '../assets/images/Star 1.png'
+import sapatoAzul from '../assets/images/sapato_azul_Dstore.png'
+import ProductCard from "../components/ProductCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './ProductViewPage.css'
-import star from '../assets/images/Star 1.png'
+
 
 
 
 export default function ProductViewPage() {
+
+    const produtos = [
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        },
+        {
+            imagem: sapatoAzul,
+            nome: "K-Swiss V8 - Masculino",
+            preco: "R$ 200",
+            desconto: "R$ 100"
+        }
+    ];
+
     return (
         <>
             <div className="barra-especificacoes">
@@ -87,6 +190,25 @@ export default function ProductViewPage() {
                         <button className="botao_comprar_detalhes-tenis">COMPRAR</button>
                     </div>
                 </div>
+            </div>
+
+            <div class="titulo_produtos_relacionados">
+                <h1 class="h1_produtos_relacionados">Produtos Relacionados</h1>
+                <div><a class="link_produtos_relacionados" href="">Ver Todos
+                    <img src="images/seta.png" alt="" /></a>
+                </div>
+            </div>
+
+            <div className="cards-div">
+                {produtos.map((produto, index) => (
+                    <ProductCard
+                        key={index}
+                        imagem={produto.imagem}
+                        nome={produto.nome}
+                        preco={produto.preco}
+                        desconto={produto.desconto}
+                    />
+                ))}
             </div>
         </>
     );
