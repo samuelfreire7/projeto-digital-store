@@ -1,22 +1,9 @@
+import "./FilterGroup.css"
+
 export default function Filter() {
 
     return (
         <>
-            <div className="resultado_produtos">
-                <div className="titulo_resultado">
-                    <p className="titulo1">Resultados para “Tênis”</p>
-                    <p>-</p>
-                    <p className="titulo2">389 produtos</p>
-                </div>
-
-                <div className="ordenar"><label className="label_ordenar" for="">Ordenar por:</label>
-                    <select classNameName="selecionar_preco" name="" id="">
-                        <option value="Maior">Maior Preço</option>
-                        <option value="Menor">Menor Preço</option>
-                        <option value="Relevante">Mais Relevantes</option>
-                    </select>
-                </div>
-            </div>
             <section className="uniao">
                 <div className="filtro">
                     <h3>Filtrar Por</h3>

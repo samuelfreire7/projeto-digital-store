@@ -1,8 +1,94 @@
+import tenisImg from '../assets/images/tenis carrossel.png';
+import stars from '../assets/images/Stars.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './ProductViewPage.css'
+import star from '../assets/images/Star 1.png'
+import React, { useState } from 'react';
+
 
 export default function ProductViewPage() {
+    const [activeSlide, setActiveSlide] = useState(0);
     return (
         <>
-        <h1>Página 3</h1>
+            <div className="barra-especificacoes">
+                <p><strong>Home</strong> / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</p>
+
+                <div className="div-do-tenis">
+
+                    <div className="especificacoes">
+                        <div className="view-do-produto">
+                            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img src={tenisImg} alt="Tênis" />
+                                    </div>
+                                    {[2, 3, 4, 5].map((i) => (
+                                        <div className={`carousel-item slide${i}`} key={i}>
+                                            <img className={`imagem_carrossel_${i}`} src={tenisImg} alt={`Slide ${i}`} />
+                                        </div>
+                                    ))}
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <div className="imagenszinhas">
+                                {[1, 2, 3, 4, 5].map((i) => (
+                                    <div key={i}><img className={`imagem${i}`} src={tenisImg} alt={`Variante ${i}`} /></div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="detalhes-tenis">
+                        <h1>
+                            Tênis Nike Revolution <br /> 6 Next Nature Masculino
+                        </h1>
+                        <p className="texto_detalhes_tenis">Casual | Nike | REF:38416711</p>
+                        <div className="estrlas">
+                            <img src={stars} alt="Estrelas" />
+                            <p className="avaliacao">4.7 <img src={star} alt="Estrela" /></p>
+                            <p className="texto_detalhes_tenis">(90 avaliações)</p>
+                        </div>
+                        <div className="preco_detalhes-tenis">
+                            <p className="preco_detalhes-tenis_promocao">R$ 219,00</p>
+                            <p className="preco_detalhes-tenis_real">R$ 300</p>
+                        </div>
+
+                        <p className="texto_descricao_tenis">Descrição do produto</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br />
+                            enim ad minim veniam, quis nostrud exercitation ullamco.
+                        </p>
+
+                        <h5 className="titulo_detalhes_tenis">Tamanho</h5>
+                        <div className="tamanho_detalhes-tenis">
+                            {[39, 40, 41, 42, 43].map((num) => (
+                                <button key={num}>{num}</button>
+                            ))}
+                        </div>
+
+                        <h5 className="tilulo_cor_detalhes-tenis">Cor</h5>
+                        <div className="cor_detalhes-tenis">
+                            <div className="botoes_detalhes-tenis_cor">
+                                {[1, 2, 3, 4].map((num) => (
+                                    <button key={num} className={`cor_button${num}`}></button>
+                                ))}
+                            </div>
+                        </div>
+
+                        <button className="botao_comprar_detalhes-tenis">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
         </>
-    );   
+    );
 }

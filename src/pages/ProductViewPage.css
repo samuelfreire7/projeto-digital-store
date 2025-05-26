@@ -1,0 +1,354 @@
+.barra-especificaçoes {
+    font-family: "Inter";
+    font-size: 16px;
+    
+}
+
+.div-do-tenis {
+    display: flex;
+    background-color: #F9F8FE;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.especificacoes {
+    margin-left: 100px;
+}
+
+.carousel-item {
+    background-color: #E2E3FF;
+    width: 700px;
+    height: 600px;
+}
+
+.carousel-inner {
+    width: 700px;
+    height: 600px;
+    background-color: #E2E3FF;
+}
+
+.carousel-inner img {
+    margin: 100px;
+    margin-top: 150px;
+}
+
+.slide2 {
+    background-color: #FFE8BC;
+}
+
+.slide3 {
+    background-color: #FFC0BC;
+}
+
+.slide4 {
+    background-color: #DEC699;
+}
+
+.slide5 {
+    background-color: #E8DFCF;
+}
+
+.imagenszinhas {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px 0px 0px;
+}
+
+.imagenszinhas img {
+    border-radius: 4px;
+    width: 100px;
+    height: 96px;
+
+}
+
+.imagem1 {
+    background-color: #E2E3FF;
+    border: 3px solid #C92071;
+}
+
+.imagem2 {
+    background-color: #FFE8BC;
+}
+
+.imagem3 {
+    background-color: #FFC0BC;
+}
+
+.imagem4 {
+    background-color: #DEC699;
+}
+
+.imagem5 {
+    background-color: #E8DFCF;
+}
+
+.detalhes-tenis {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.detalhes-tenis .texto_detalhes_tenis {
+    color: #666666;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.estrlas {
+    display: flex;
+    gap: 10px;
+}
+
+.estrlas img {
+    width: 100px;
+    height: 20px;
+}
+
+.avaliacao {
+    background-color: #F6AA1C;
+    width: 63px;
+    height: 23px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    color: #FFFFFF;
+    font-family: inter;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.avaliacao img {
+    width: 11px;
+    height: 10px;
+}
+
+.preco_detalhes-tenis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.preco_detalhes-tenis_promocao {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #474747;
+}
+
+.preco_detalhes-tenis_real {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    text-decoration: line-through;
+    color: #CCCCCC;
+
+}
+
+.texto_descricao_tenis {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    color: #8F8F8F;
+
+}
+
+.titulo_detalhes_tenis,
+.tilulo_cor_detalhes-tenis {
+    display: flex;
+    margin-top: 10px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    color: #8F8F8F;
+}
+
+.tamanho_detalhes-tenis {
+    display: flex;
+    gap: 20px;
+}
+
+.tamanho_detalhes-tenis button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: #ffffff;
+    color: #474747;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+}
+
+.tamanho_detalhes-tenis button:active {
+    background-color: #C92071;
+}
+
+.botoes_detalhes-tenis_cor button {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+}
+
+.botoes_detalhes-tenis_cor button:active {
+    border: 4px solid #C92071;
+}
+
+.cor_button1 {
+    background-color: #6FEEFF;
+}
+
+.cor_button2 {
+    background-color: #FF6969;
+}
+
+.cor_button3 {
+    background-color: #5E5E5E;
+}
+
+.cor_button4 {
+    background-color: #6D70B7;
+}
+
+.botao_comprar_detalhes-tenis {
+    margin-top: 25px;
+    width: 220px;
+    height: 48px;
+    background-color: #FFB31F;
+    border-radius: 8px;
+    border: none;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 250, 250);
+}
+
+.botao_comprar_detalhes-tenis:hover {
+    border: 1px solid black;
+}
+
+.botao_comprar_detalhes-tenis:active {
+    background-color: #C92071;
+}
+
+.produtos_relacionados {
+    background-color: #F9F8FE;
+}
+
+.titulo_produtos_relacionados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    background-color: #F9F8FE;
+
+}
+
+.h1_produtos_relacionados {
+    text-align: left;
+    margin-left: 1px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+    width: 283px;
+    height: 38px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #474747
+}
+
+.link_produtos_relacionados {
+    color: #C92071;
+    font-size: 18px;
+    font-family: inter;
+    text-decoration: none;
+}
+
+
+.produto_1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.produto_1 .card {
+    border: none;
+    border-radius: 0%;
+}
+
+.produto_1 img {
+    width: 290px;
+    transform: rotateY(10deg) rotateX(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.produto_1 a {
+    text-decoration: none;
+    color: #474747;
+}
+
+.produto_1 .presos {
+    display: flex;
+    justify-content: center;
+}
+
+.produto_1 .descontos {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+
+.body_produto_1 {
+    background-color: #F9F8FE;
+}
+
+.texto_produto_1 {
+    font-size: 24px;
+    text-align: center
+}
+
+.valor_produto_1 {
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.promoçao_produto_1 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: #E7FF86;
+    border-radius: 50px;
+    padding: 5px;
+}
