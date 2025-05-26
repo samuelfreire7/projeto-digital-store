@@ -6,12 +6,13 @@ import HomePage from './pages/HomePage'
 import RoutePage from './routes/RoutePage'
 
 
+
 function App() {
   return (
     <>
-    {/* <Header/> */}
+    <Header/>
     <RoutePage />
-    {/* <Footer/> */}
+    <Footer/>
     </>
   )
 }
