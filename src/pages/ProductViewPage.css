@@ -16,19 +16,19 @@
     margin-left: 100px;
 }
 
-.carousel-item {
+.carousel-item-pag3 {
     background-color: #E2E3FF;
     width: 700px;
     height: 600px;
 }
 
-.carousel-inner {
+.carrossel-inner-pag3 {
     width: 700px;
     height: 600px;
     background-color: #E2E3FF;
 }
 
-.carousel-inner img {
+.carrossel-inner-pag3 img {
     margin: 100px;
     margin-top: 150px;
 }

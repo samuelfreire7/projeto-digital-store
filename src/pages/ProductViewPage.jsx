@@ -4,11 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './ProductViewPage.css'
 import star from '../assets/images/Star 1.png'
-import React, { useState } from 'react';
+
 
 
 export default function ProductViewPage() {
-    const [activeSlide, setActiveSlide] = useState(0);
     return (
         <>
             <div className="barra-especificacoes">
@@ -19,12 +18,12 @@ export default function ProductViewPage() {
                     <div className="especificacoes">
                         <div className="view-do-produto">
                             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                                <div className="carousel-inner">
+                                <div className="carousel-inner carrossel-inner-pag3">
                                     <div className="carousel-item active">
                                         <img src={tenisImg} alt="Tênis" />
                                     </div>
                                     {[2, 3, 4, 5].map((i) => (
-                                        <div className={`carousel-item slide${i}`} key={i}>
+                                        <div className={`carousel-item carousel-item-pag3  slide${i}`} key={i}>
                                             <img className={`imagem_carrossel_${i}`} src={tenisImg} alt={`Slide ${i}`} />
                                         </div>
                                     ))}
