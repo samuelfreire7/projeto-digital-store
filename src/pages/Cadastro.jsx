@@ -15,10 +15,7 @@ export default function Cadastro() {
             <form className='form-cad'>
                 <div className="formulario">
                     <h1>Crie sua conta</h1>
-                    <p>
-                        Já possui uma conta? Entre
-                        <a href="cadastro.html">aqui</a>.
-                    </p>
+                    <p>Já possui uma conta? Entre <a className='aqui-cad' href="">aqui</a>.</p>
                     <label for="email">Email*</label>
                     <input className='input-cad' type="email" placeholder="Insira seu email" id="email" name="email" required></input>
 
