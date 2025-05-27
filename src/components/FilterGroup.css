@@ -33,9 +33,58 @@
 
 .uniao {
     display: flex;
-    gap: 30px;
     background-color: #F9F8FE;
     justify-content: center;
+    
+}
+.filtro {
+border: solid #f2f2f2;
+margin-left: 100px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 308px;
+height: 720px;
+border-radius: 4px;
+background-color: white
+}
+.barrafiltro{
+    justify-content: center; 
+    align-items: center;
+    border: 1px;
+    width: 248px;
+    color: #b6b6b6;
+}
+.botao-filtro{
+    display: flex;
+    gap: 10px;
+    color: #474747;
+    font-size: 15px;
+    line-height: 22px;
+  letter-spacing: 0.25px;
+  font-family: initial;
+}
+.input-filtro {
+    accent-color: #C92071;
+    width: 22px;
+    height: 22px;
+}
+.topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.texto1-filtro {
+    display: flex;
+    text-align: left;
+    width: 100%;
+
+}
+
+.texto1-filtro p{
+    margin-top: 20px;
+    
 }
 
 

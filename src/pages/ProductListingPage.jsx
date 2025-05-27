@@ -97,12 +97,7 @@ export default function ProductListingPage() {
             preco: "R$ 200",
             desconto: "R$ 100"
         },
-        {
-            imagem: sapatoAzul,
-            nome: "K-Swiss V8 - Masculino",
-            preco: "R$ 200",
-            desconto: "R$ 100"
-        }
+
     ];
 
 
