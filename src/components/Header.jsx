@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header className="inicio">
             <div className="imagem-principal">
-                <img src="src/assets/images/logo_DStore.png" alt="Logo da loja" />
+                <a href="/"><img src="src/assets/images/logo_DStore.png" alt="Logo da loja" /></a>
             </div>
 
             <div className="search-bar">
@@ -22,7 +22,7 @@ export default function Header() {
                 <a
                     id="cadastro"
                     className="links"
-                    href="cadastro.html"
+                    href="/cadastro"
                     style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}
                 >
                     Cadastre-se
