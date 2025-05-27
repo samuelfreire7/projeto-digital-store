@@ -2,15 +2,20 @@ import tenisImg from '../assets/images/tenis carrossel.png';
 import stars from '../assets/images/Stars.png'
 import star from '../assets/images/Star 1.png'
 import sapatoAzul from '../assets/images/sapato_azul_Dstore.png'
+import seta from '../assets/images/seta.png'
 import ProductCard from "../components/ProductCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './ProductViewPage.css'
+import React, { useState } from 'react';
 
 
 
 
 export default function ProductViewPage() {
+
+    const [tamanhoSelecionado, setTamanhoSelecionado] = useState(null);
+    const [corSelecionada, setCorSelecionada] = useState(null);
 
     const produtos = [
         {
@@ -174,15 +179,27 @@ export default function ProductViewPage() {
                         <h5 className="titulo_detalhes_tenis">Tamanho</h5>
                         <div className="tamanho_detalhes-tenis">
                             {[39, 40, 41, 42, 43].map((num) => (
-                                <button key={num}>{num}</button>
+                                <button
+                                    key={num}
+                                    onClick={() => setTamanhoSelecionado(num)}
+                                    className={tamanhoSelecionado === num ? 'ativo' : ''}
+                                >
+                                    {num}
+                                </button>
                             ))}
                         </div>
+
+
 
                         <h5 className="tilulo_cor_detalhes-tenis">Cor</h5>
                         <div className="cor_detalhes-tenis">
                             <div className="botoes_detalhes-tenis_cor">
                                 {[1, 2, 3, 4].map((num) => (
-                                    <button key={num} className={`cor_button${num}`}></button>
+                                    <button
+                                        key={num}
+                                        onClick={() => setCorSelecionada(num)}
+                                        className={`cor_button${num} ${corSelecionada === num ? 'ativo' : ''}`}
+                                    ></button>
                                 ))}
                             </div>
                         </div>
@@ -194,8 +211,8 @@ export default function ProductViewPage() {
 
             <div class="titulo_produtos_relacionados">
                 <h1 class="h1_produtos_relacionados">Produtos Relacionados</h1>
-                <div><a class="link_produtos_relacionados" href="">Ver Todos
-                    <img src="images/seta.png" alt="" /></a>
+                <div><a class="link_produtos_relacionados" href="/produtos">Ver Todos
+                    <img src={seta} alt="" /></a>
                 </div>
             </div>
 

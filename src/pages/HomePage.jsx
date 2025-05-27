@@ -101,7 +101,7 @@ export default function HomePage() {
             <ColecoesDestaque />
 
             <div className='titulo_produtos_em_alta'><h1 className="H1_em_alta">Produtos em alta</h1>
-                <a className="link_produtos_em_alta" href="">Ver Todos <img src={seta} alt="Seta" /></a>
+                <a className="link_produtos_em_alta" href="/produtos">Ver Todos <img src={seta} alt="Seta" /></a>
             </div>
 
             <div className="cards-div">
