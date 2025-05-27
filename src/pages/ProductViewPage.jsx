@@ -192,9 +192,9 @@ export default function ProductViewPage() {
                 </div>
             </div>
 
-            <div class="titulo_produtos_relacionados">
-                <h1 class="h1_produtos_relacionados">Produtos Relacionados</h1>
-                <div><a class="link_produtos_relacionados" href="">Ver Todos
+            <div className="titulo_produtos_relacionados">
+                <h1 className="h1_produtos_relacionados">Produtos Relacionados</h1>
+                <div><a className="link_produtos_relacionados" href="">Ver Todos
                     <img src="images/seta.png" alt="" /></a>
                 </div>
             </div>

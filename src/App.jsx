@@ -2,6 +2,7 @@
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Cadastro from './pages/Cadastro'
 import HomePage from './pages/HomePage'
 import RoutePage from './routes/RoutePage'
 
