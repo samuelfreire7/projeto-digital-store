@@ -1,9 +1,6 @@
 import "./Banner.css"
 
 
-import imagemBanner from "../assets/images/Banner.png"
-
-
 
 export default function Banner (){
     return (

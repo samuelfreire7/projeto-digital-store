@@ -19,6 +19,11 @@ export default function ProductViewPage() {
     const [tamanhoSelecionado, setTamanhoSelecionado] = useState(null);
     const [corSelecionada, setCorSelecionada] = useState(null);
     const carouselRef = useRef(null);
+    useEffect(() => {
+        if (carouselRef.current) {
+            new window.bootstrap.Carousel(carouselRef.current);
+        }
+    }, []);
     const handleThumbnailClick = (index) => {
         if (carouselRef.current) {
             const carouselInstance = window.bootstrap.Carousel.getInstance(carouselRef.current);
@@ -152,13 +157,12 @@ export default function ProductViewPage() {
                                         </div>
                                     ))}
                                 </div>
-                                {/* controles prev/next aqui */}
                             </div>
 
                             <div className="imagenszinhas">
                                 {[0, 1, 2, 3, 4].map((i) => (
                                     <div key={i} onClick={() => handleThumbnailClick(i)} style={{ cursor: 'pointer' }}>
-                                        <img className={`imagem${i + 1}`} src={tenisImg} alt={`Variante ${i + 1}`}  />
+                                        <img className={`imagem${i + 1}`} src={tenisImg} alt={`Variante ${i + 1}`} />
                                     </div>
                                 ))}
                             </div>
