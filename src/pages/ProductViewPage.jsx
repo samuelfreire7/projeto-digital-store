@@ -7,7 +7,9 @@ import ProductCard from "../components/ProductCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './ProductViewPage.css'
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+
+
 
 
 
@@ -16,6 +18,15 @@ export default function ProductViewPage() {
 
     const [tamanhoSelecionado, setTamanhoSelecionado] = useState(null);
     const [corSelecionada, setCorSelecionada] = useState(null);
+    const carouselRef = useRef(null);
+    const handleThumbnailClick = (index) => {
+        if (carouselRef.current) {
+            const carouselInstance = window.bootstrap.Carousel.getInstance(carouselRef.current);
+            if (carouselInstance) {
+                carouselInstance.to(index);
+            }
+        }
+    };
 
     const produtos = [
         {
@@ -125,30 +136,30 @@ export default function ProductViewPage() {
 
                     <div className="especificacoes">
                         <div className="view-do-produto">
-                            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                            <div
+                                id="carouselExampleControls"
+                                className="carousel slide"
+                                data-bs-ride="carousel"
+                                ref={carouselRef}
+                            >
                                 <div className="carousel-inner carrossel-inner-pag3">
                                     <div className="carousel-item active">
                                         <img src={tenisImg} alt="Tênis" />
                                     </div>
-                                    {[2, 3, 4, 5].map((i) => (
-                                        <div className={`carousel-item carousel-item-pag3  slide${i}`} key={i}>
+                                    {[2, 3, 4, 5].map((i, idx) => (
+                                        <div className={`carousel-item carousel-item-pag3 slide${i}`} key={i}>
                                             <img className={`imagem_carrossel_${i}`} src={tenisImg} alt={`Slide ${i}`} />
                                         </div>
                                     ))}
                                 </div>
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Previous</span>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Next</span>
-                                </button>
+                                {/* controles prev/next aqui */}
                             </div>
 
                             <div className="imagenszinhas">
-                                {[1, 2, 3, 4, 5].map((i) => (
-                                    <div key={i}><img className={`imagem${i}`} src={tenisImg} alt={`Variante ${i}`} /></div>
+                                {[0, 1, 2, 3, 4].map((i) => (
+                                    <div key={i} onClick={() => handleThumbnailClick(i)} style={{ cursor: 'pointer' }}>
+                                        <img className={`imagem${i + 1}`} src={tenisImg} alt={`Variante ${i + 1}`}  />
+                                    </div>
                                 ))}
                             </div>
                         </div>
@@ -209,9 +220,9 @@ export default function ProductViewPage() {
                 </div>
             </div>
 
-            <div class="titulo_produtos_relacionados">
-                <h1 class="h1_produtos_relacionados">Produtos Relacionados</h1>
-                <div><a class="link_produtos_relacionados" href="/produtos">Ver Todos
+            <div className="titulo_produtos_relacionados">
+                <h1 className="h1_produtos_relacionados">Produtos Relacionados</h1>
+                <div><a className="link_produtos_relacionados" href="/produtos">Ver Todos
                     <img src={seta} alt="" /></a>
                 </div>
             </div>

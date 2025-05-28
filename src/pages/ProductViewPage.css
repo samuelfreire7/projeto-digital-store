@@ -1,7 +1,7 @@
 .barra-especificaçoes {
     font-family: "Inter";
     font-size: 16px;
-    
+
 }
 
 .div-do-tenis {
@@ -64,7 +64,6 @@
 
 .imagem1 {
     background-color: #E2E3FF;
-    border: 3px solid #C92071;
 }
 
 .imagem2 {
@@ -183,13 +182,13 @@
     border: 1px solid #ccc;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  .tamanho_detalhes-tenis button.ativo {
+}
+
+.tamanho_detalhes-tenis button.ativo {
     background-color: #C92071;
     color: white;
     border-color: #C92071;
-  }
+}
 
 
 .tamanho_detalhes-tenis button:active {
@@ -203,12 +202,12 @@
     border: 2px solid transparent;
     margin-right: 8px;
     cursor: pointer;
-  }
-  
-  .botoes_detalhes-tenis_cor button.ativo {
+}
+
+.botoes_detalhes-tenis_cor button.ativo {
     border-color: #C92071;
     outline: 2px solid #C92071;
-  }
+}
 
 .cor_button1 {
     background-color: #6FEEFF;

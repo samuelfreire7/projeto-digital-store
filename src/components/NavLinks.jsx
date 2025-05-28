@@ -1,12 +1,22 @@
-import './NavLinks.css'; 
+import './NavLinks.css';
+import { NavLink } from 'react-router-dom';
+
 
 export default function NavLinks() {
   return (
     <nav className="linksheader">
-      <a href="/" className="home">Home</a>
-      <a href="/produtos" className="links">Produtos</a>
-      <a href="/categorias" className="links">Categorias</a>
-      <a href="/meus-produtos" className="links">Meus Produtos</a>
+      <NavLink to="/" className={({ isActive }) => isActive ? "home" : "links"}>
+        Home
+      </NavLink>
+      <NavLink to="/produtos" className={({ isActive }) => isActive ? "home" : "links"}>
+        Produtos
+      </NavLink>
+      <NavLink to="/categorias" className={({ isActive }) => isActive ? "home" : "links"}>
+        Categorias
+      </NavLink>
+      <NavLink to="/meus-produtos" className={({ isActive }) => isActive ? "home" : "links"}>
+        Meus Produtos
+      </NavLink>
     </nav>
   );
 }

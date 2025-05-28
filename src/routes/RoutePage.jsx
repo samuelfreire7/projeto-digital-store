@@ -7,15 +7,14 @@ import Cadastro from "../pages/Cadastro";
 export default function RoutePage() {
     return (
         <>
-        <BrowserRouter>
-        <Routes>
-            <Route path="/" index element={<HomePage/>} />
-            <Route path="/produtos" element={<ProductListingPage/>} />
-            <Route path="/pagina3" element={<ProductViewPage/>} />
-            <Route path="/cadastro" element={<Cadastro/>} />
 
-        </Routes>
-        </BrowserRouter>
+            <Routes>
+                <Route path="/" index element={<HomePage />} />
+                <Route path="/produtos" element={<ProductListingPage />} />
+                <Route path="/pagina3" element={<ProductViewPage />} />
+                <Route path="/cadastro" element={<Cadastro />} />
+            </Routes>
+
         </>
     );
 }
