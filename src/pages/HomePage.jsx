@@ -83,7 +83,7 @@ export default function HomePage() {
     return (
         <>
 
-            <NavLinks />
+
             <Carrossel />
 
             <div className="H1_colecoes" ><p>Coleções em destaque</p></div>
@@ -101,7 +101,7 @@ export default function HomePage() {
             <ColecoesDestaque />
 
             <div className='titulo_produtos_em_alta'><h1 className="H1_em_alta">Produtos em alta</h1>
-                <a className="link_produtos_em_alta" href="">Ver Todos <img src={seta} alt="Seta" /></a>
+                <a className="link_produtos_em_alta" href="/produtos">Ver Todos <img src={seta} alt="Seta" /></a>
             </div>
 
             <div className="cards-div">
@@ -121,16 +121,3 @@ export default function HomePage() {
         </>
     );
 }
-// import Header from './components/Header';
-// import NavLinks from './components/NavLinks';
-// import Carrossel from './components/carrossel';
-// import Section from './components/Section'
-// import ColecoesDestaque from './components/Colecao';
-// import colecaoBlusa from './assets/images/blusaSupreme.png';
-// import colecaoFone from './assets/images/cardFone.png';
-// import colecaoTenis from './assets/images/cardTenis.png';
-// import ProductCard from './components/ProductCard';
-// import sapatoAzul from './assets/images/sapato_azul_Dstore.png';
-// import seta from './assets/images/seta.png';
-// import Banner from './components/Banner';
-// import Footer from './components/Footer';

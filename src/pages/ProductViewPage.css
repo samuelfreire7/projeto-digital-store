@@ -1,7 +1,7 @@
 .barra-especificaçoes {
     font-family: "Inter";
     font-size: 16px;
-    
+
 }
 
 .div-do-tenis {
@@ -58,13 +58,12 @@
 .imagenszinhas img {
     border-radius: 4px;
     width: 100px;
-    height: 96px;
+    height: 75px;
 
 }
 
 .imagem1 {
     background-color: #E2E3FF;
-    border: 3px solid #C92071;
 }
 
 .imagem2 {
@@ -176,47 +175,38 @@
     color: #8F8F8F;
 }
 
-.tamanho_detalhes-tenis {
-    display: flex;
-    gap: 20px;
+.tamanho_detalhes-tenis button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.tamanho_detalhes-tenis button {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 4px;
-    border-width: 1px;
-    background-color: #ffffff;
-    color: #474747;
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.75px;
-    cursor: pointer;
+.tamanho_detalhes-tenis button.ativo {
+    background-color: #C92071;
+    color: white;
+    border-color: #C92071;
 }
+
 
 .tamanho_detalhes-tenis button:active {
     background-color: #C92071;
 }
 
 .botoes_detalhes-tenis_cor button {
-    width: 31px;
-    height: 31px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    border: none;
-    font-size: 24px;
+    border: 2px solid transparent;
+    margin-right: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 15px;
 }
 
-.botoes_detalhes-tenis_cor button:active {
-    border: 4px solid #C92071;
+.botoes_detalhes-tenis_cor button.ativo {
+    border-color: #C92071;
+    outline: 2px solid #C92071;
 }
 
 .cor_button1 {

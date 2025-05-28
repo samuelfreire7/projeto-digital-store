@@ -2,15 +2,31 @@ import tenisImg from '../assets/images/tenis carrossel.png';
 import stars from '../assets/images/Stars.png'
 import star from '../assets/images/Star 1.png'
 import sapatoAzul from '../assets/images/sapato_azul_Dstore.png'
+import seta from '../assets/images/seta.png'
 import ProductCard from "../components/ProductCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './ProductViewPage.css'
+import React, { useState, useRef, useEffect } from 'react';
+
+
 
 
 
 
 export default function ProductViewPage() {
+
+    const [tamanhoSelecionado, setTamanhoSelecionado] = useState(null);
+    const [corSelecionada, setCorSelecionada] = useState(null);
+    const carouselRef = useRef(null);
+    const handleThumbnailClick = (index) => {
+        if (carouselRef.current) {
+            const carouselInstance = window.bootstrap.Carousel.getInstance(carouselRef.current);
+            if (carouselInstance) {
+                carouselInstance.to(index);
+            }
+        }
+    };
 
     const produtos = [
         {
@@ -120,30 +136,30 @@ export default function ProductViewPage() {
 
                     <div className="especificacoes">
                         <div className="view-do-produto">
-                            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                            <div
+                                id="carouselExampleControls"
+                                className="carousel slide"
+                                data-bs-ride="carousel"
+                                ref={carouselRef}
+                            >
                                 <div className="carousel-inner carrossel-inner-pag3">
                                     <div className="carousel-item active">
                                         <img src={tenisImg} alt="Tênis" />
                                     </div>
-                                    {[2, 3, 4, 5].map((i) => (
-                                        <div className={`carousel-item carousel-item-pag3  slide${i}`} key={i}>
+                                    {[2, 3, 4, 5].map((i, idx) => (
+                                        <div className={`carousel-item carousel-item-pag3 slide${i}`} key={i}>
                                             <img className={`imagem_carrossel_${i}`} src={tenisImg} alt={`Slide ${i}`} />
                                         </div>
                                     ))}
                                 </div>
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Previous</span>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Next</span>
-                                </button>
+                                {/* controles prev/next aqui */}
                             </div>
 
                             <div className="imagenszinhas">
-                                {[1, 2, 3, 4, 5].map((i) => (
-                                    <div key={i}><img className={`imagem${i}`} src={tenisImg} alt={`Variante ${i}`} /></div>
+                                {[0, 1, 2, 3, 4].map((i) => (
+                                    <div key={i} onClick={() => handleThumbnailClick(i)} style={{ cursor: 'pointer' }}>
+                                        <img className={`imagem${i + 1}`} src={tenisImg} alt={`Variante ${i + 1}`}  />
+                                    </div>
                                 ))}
                             </div>
                         </div>
@@ -174,15 +190,27 @@ export default function ProductViewPage() {
                         <h5 className="titulo_detalhes_tenis">Tamanho</h5>
                         <div className="tamanho_detalhes-tenis">
                             {[39, 40, 41, 42, 43].map((num) => (
-                                <button key={num}>{num}</button>
+                                <button
+                                    key={num}
+                                    onClick={() => setTamanhoSelecionado(num)}
+                                    className={tamanhoSelecionado === num ? 'ativo' : ''}
+                                >
+                                    {num}
+                                </button>
                             ))}
                         </div>
+
+
 
                         <h5 className="tilulo_cor_detalhes-tenis">Cor</h5>
                         <div className="cor_detalhes-tenis">
                             <div className="botoes_detalhes-tenis_cor">
                                 {[1, 2, 3, 4].map((num) => (
-                                    <button key={num} className={`cor_button${num}`}></button>
+                                    <button
+                                        key={num}
+                                        onClick={() => setCorSelecionada(num)}
+                                        className={`cor_button${num} ${corSelecionada === num ? 'ativo' : ''}`}
+                                    ></button>
                                 ))}
                             </div>
                         </div>
@@ -192,10 +220,10 @@ export default function ProductViewPage() {
                 </div>
             </div>
 
-            <div class="titulo_produtos_relacionados">
-                <h1 class="h1_produtos_relacionados">Produtos Relacionados</h1>
-                <div><a class="link_produtos_relacionados" href="">Ver Todos
-                    <img src="images/seta.png" alt="" /></a>
+            <div className="titulo_produtos_relacionados">
+                <h1 className="h1_produtos_relacionados">Produtos Relacionados</h1>
+                <div><a className="link_produtos_relacionados" href="/produtos">Ver Todos
+                    <img src={seta} alt="" /></a>
                 </div>
             </div>
 

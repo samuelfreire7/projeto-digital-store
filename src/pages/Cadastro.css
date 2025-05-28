@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font: rgba(71, 71, 71, 1);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#cad {
+    min-height: 100vh;
+    border: 2px;
+    border-color: black;
+    background: linear-gradient(to top, rgb(215, 215, 245), rgb(186, 186, 248));
+    display: flex;
+}
+.form-cad {
+    border: none;
+    border-radius: 4px;
+    width: 583px;
+    height: 399px;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: start;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(71, 71, 71, 1);
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.input-cad {
+    width: 523px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    padding-left: 15px;
+    font-size: medium;
+}
+.criar-conta {
+    background-color: rgba(201, 32, 113, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 523px;
+    height: 60px;
+    border-radius: 8px;
+    color: rgba(245, 245, 245, 1);
+    font-size: 16px;
+    font-weight: 700;
+}
+.outras-formas-de-se-cadastrar {
+    display: flex;
+    p {
+        margin: 10px;
+    }
+    img {
+        width: 24px;
+        height: 24px;
+        margin: 7px;
+    }
+    justify-content: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgt {
+    margin-left: 20px;
+    width: 310px;
+    height: 483px;
+}
+.imgt2 {
+    width: 330px;
+    height: 483px;
+    margin-top: 150px;
+}
+.formulario {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.aqui-cad {
+    color: rgba(71, 71, 71, 1);
+}
